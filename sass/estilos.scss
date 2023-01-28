@@ -1,0 +1,1231 @@
+@import "variableglobal";
+@import "generales";
+@import "navbar";
+@import "footer";
+@import "nosotros";
+@import "mixinindex";
+
+
+/*Seccion productos*/
+.body-productos{
+    background-color: #f3f2f2;
+}
+
+.filtros{
+    display: none;
+}
+
+.productos{
+    display: grid;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left:20px;
+    margin-right: 20px;
+    height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 3.5fr 3.5fr; 
+    gap: 25px;
+    grid-template-areas: 
+    "arriba" 
+    "productos-1"
+    "productos-2"; 
+}
+
+.arriba{
+    grid-area: arriba;
+    display: flex;
+    justify-content: center;
+}
+
+.productos-1{
+    grid-area: productos-1;
+}
+
+.productos-2{
+    grid-area: productos-2;
+}
+
+.productos-1 h2, .productos-2 h2{
+    font-weight: 600;
+}
+
+.filtro-marcas{
+    background-color: #ffffff;
+    color:#000000;
+    border: solid 1px #d4d4d4;
+    height: 53px;
+}
+
+.filtros h3{
+    font-weight: 600;
+}
+
+.categorias ul li{
+    color:#797b85;
+}
+
+.categorias ul li:hover{
+    color:#FF4B61;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #FF4B61;
+    color: white;
+    border: none;
+}
+
+/*Search bar*/
+.arriba{
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.search-bar-productos{
+    display: flex;
+    height: 50px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+.search-bar-productos input{
+    border: none;
+    outline: none;
+    font-size: 15px; 
+    padding-left: 20px;
+}
+
+.search-bar-productos button{
+    border: none;
+    outline: none;
+    background-color: #FF4B61;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.icono-filtros{
+    height: 20px;
+}
+
+.categorías-mobile{
+    width: 60px !important;
+}
+
+/*Cards productos*/
+.ofertas-cards{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.card-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 190px;
+    height: 290px;
+    padding: 19px;
+    box-shadow: 0px 4px 9px 0px rgba(35, 35, 44, 0.103);
+    transition: all 0.4s;
+}
+
+.card-producto:hover{
+    transform: scale(1.15);
+}
+
+.producto{
+    padding: 20px;
+    border:2px solid rgb(204, 204, 204);
+    border-radius: 3%;
+    margin: 10px;
+    width: 200px;
+}  
+
+.producto-img{
+    height: 100px;
+    margin-bottom: 18px;
+}
+
+.producto-boton{
+    border: none;
+    background-color: #FF4B61;
+    border-radius: 3px;
+    color:#ffffff;
+    margin-top: 4px;
+    cursor: pointer;
+    padding: 10px;
+    width: 163px;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-producto h3{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #FF4B61;
+}
+
+.card-producto h4{
+    text-align: center;
+}
+
+/*Seccion imprenta*/
+.portada-imprenta{
+    display: grid;
+    grid-template-areas: 
+    "titulo-portada-imprenta"
+    "img-portada-imprenta";
+    gap:20px;
+}
+
+/*Portada Imprenta*/
+.img-portada-imprenta{
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 30px;
+    grid-area: img-portada-imprenta;
+}
+
+.portada-imprenta{
+    margin-top: 40px;
+}
+
+.titulo-portada-imprenta{
+    padding-right: 60px;
+    margin-left: 10%;
+    grid-area: titulo-portada-imprenta;
+}
+
+.h1-imprenta{
+    text-align: center;
+}
+
+.portada-imprenta h1{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.portada-imprenta h3{
+    color:rgb(149, 148, 158);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*Servicios imprenta*/
+.servicios-imprenta{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-imprenta{
+    height:300px;
+    width: 240px;
+
+        h3{
+            margin-bottom: 10px;
+        }
+}
+
+/*Pasos de trabajo imprenta*/
+.título-pasos-trabajo{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.h2-paso{
+    font-weight: 400;
+    color: #868686;
+}
+
+.paso-trabajo{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+.paso-trabajo h3{
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.paso-imagen{
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.paso-trabajo-cta{
+    margin-top: 30px;
+    display: flex;
+}
+
+.paso-trabajo-cta h4{
+    color: #FF4B61;
+}
+
+.arrow-cta{
+    height: 20px;
+    margin-left: 10px;
+    filter: $iconorojo;
+}
+
+/*Servicios de diseño imprenta*/
+.h2-diseño{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.h3-diseño{
+    color:#6b6b6b;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+}
+
+.servicios-diseño{
+    background-color: #ffffff;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios-diseño-container{
+    margin-top:60px;
+    margin-bottom: 90px;
+    background-color: #ffffff;
+    padding: 30px;
+    height: 320px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width:200px;
+    box-shadow: 0px 5px 20px 0px rgba(35, 35, 44, 0.13);
+}
+
+.lista-diseño{
+    font-size: 16px;
+    line-height: 24px;
+    list-style-image: url(../img/list-icon.svg);
+}
+
+.lista-diseño ul{
+    margin-bottom: 0;
+}
+
+/*Formulario de contacto imprenta*/
+.formulario-imprenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    grid-area: formulario-imprenta;
+}
+
+.titulo-formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 20px; 
+        
+        h2{
+            margin-top: 20px;
+        }
+
+        p{
+            font-size:18px;
+        }
+}
+
+.icon-form{
+    height: 60px;
+}
+
+
+.form-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-1, .input-2 {
+    margin-bottom: 15px;
+    width: 270px;
+    padding: 10px;
+    border: solid 1px #dfdfdf;
+    font-size: 11px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.input-mensaje{
+    margin-bottom: 15px;
+    height: 60px;
+    width: 270px;
+    padding: 10px;
+    border: solid 1px #dfdfdf;
+    font-size: 11px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.boton-form{
+    border: none;
+    background-color:#FF4B61;
+    color:#ffffff;
+    justify-content: center;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-self: flex-end;
+}
+
+
+
+/*Seccion Contacto*/
+.seccion-contacto{
+    display: grid;
+    margin-bottom: 35px;
+    gap:10px;
+    height: 900px;
+    grid-template-areas:
+    "img-contacto-container"
+    "contacto-titulo"
+    "contacto-texto"
+    "formulario-contacto"
+    "contacto-datos"  
+    "contacto-redes"
+    ;
+    grid-template-rows: 3fr 0.5fr 0.9fr 4.5fr 1.6fr 1fr;
+}  
+
+.body-contacto{
+    background-color: #f3f2f2;
+}
+
+.img-contacto-container{
+    grid-area: img-contacto-container;
+    overflow-y: hidden;
+}
+
+.img-contacto{
+    width: 100%;
+    margin-top: -40%;
+    
+}
+
+.contacto-titulo{
+    grid-area: contacto-titulo;
+    margin-top:10px;
+}
+
+.contacto-titulo h1{
+    margin-left: 10%;
+}
+
+.contacto-texto{
+    grid-area: contacto-texto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto-texto p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+}
+
+.contacto-datos{
+    grid-area: contacto-datos;  
+    margin-top: 20px;
+}
+
+.margen-datos{
+    margin-left:10%;
+}
+
+
+
+.contacto-datos h4{
+    font-weight: 400;
+}
+
+.icon-contacto{
+    height:15px;
+    margin-right: 8px;
+}
+
+.horarios-atencion{
+    margin-top: 5px;
+}
+
+.contacto-redes {
+    grid-area: contacto-redes;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto-redes h4{
+    text-align: center;
+}
+
+.red-contacto{
+    height: 15px;
+    margin-right: 10px;
+}
+
+.redes-contacto{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-contacto{
+    grid-area: formulario-contacto;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+.input-contacto, .text-contacto{
+    margin-bottom:10px;
+    height: 35px;
+    margin-left: 10%;
+    width: 75%;
+    padding: 10px;
+    border: solid 1px #dfdfdf;
+    font-size: 11px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.text-contacto{
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+.boton-contacto{
+    margin-left:10%;
+    font-size: 14px;
+}
+
+.datos-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-form{
+    outline: none;
+    border: none;
+    background-color: #FF4B61;
+    border-radius: 3px;
+    color: #FFFFFF;
+    width: 100px;
+    padding: 10px;
+    font-size: 13px;
+    margin-left:10%;
+}
+
+
+/*Break point 600px---------------------------------*/
+@media (min-width: 600px){
+
+/*Destacado*/
+.img-destacado{
+    margin-top: -240px;
+}
+
+
+/*Seccion productos*/
+
+.search-bar-productos{
+    width: 400px;
+    justify-content: space-between;
+}
+
+/*Imprenta*/
+.img-portada-imprenta{
+    width: 60%;
+    margin-left:20%;
+}
+
+.servicios-diseño-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 196px;
+    width: 500px;
+    padding: 43px;
+}
+
+.título-pasos-trabajo{
+    text-align: center;
+}
+
+
+.pasos-de-trabajo{
+    margin-left: 40px;
+    padding-right: 90px;
+}
+
+/*Contacto*/
+.seccion-contacto{
+    display: grid;
+    height: 900px;
+    grid-template-areas:
+    "img-contacto-container img-contacto-container"
+    "contacto-titulo contacto-texto"
+    "formulario-contacto formulario-contacto"
+    "contacto-datos contacto-redes"  
+    ;
+    grid-template-rows: 4fr 1.5fr  4.2fr 2fr;
+}  
+
+.contacto-texto{
+    margin-bottom: 0px;
+}
+
+.contacto-titulo{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.contacto-titulo h1{
+    margin-left: 20%;
+}
+
+.datos-container{
+    margin-left: 10%;
+}
+
+.horarios-atencion{
+    margin-left: 10%;
+}
+
+.contacto-redes {
+    margin-top: 0px;
+}
+
+
+}
+
+
+/*Break point 768px- ----------------------------------*/
+
+@media (min-width: 768px){
+
+
+/*Footer*/
+footer{
+    height: 260px;
+    display: grid;
+    grid-template-areas:
+    "logo-footer  links-utiles-1 links-utiles-2 redes-footer"
+    "copyright  copyright copyright copyright"
+    ;
+    gap: 10px;
+    grid-template-columns: 3fr 2fr 2fr 1.3fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+footer h4{
+    font-size: 15px;
+}
+
+.red-footer-icon{
+    height: 13px;
+}
+
+.boton-red{
+    width: 30px;
+    height: 30px;
+    margin-right:5px;
+}
+
+.redes-footer{
+    align-items: flex-start;
+    margin-top: 52px;
+}
+
+/*Index*/
+.search-portada {
+    width: 70%;
+}
+
+/*Servicios*/
+.servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-imprenta{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 342px
+}
+
+.card-servicios{
+    width: 240px;
+}
+
+/*Nuevos productos Index*/
+
+.productos-destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-nuevos-productos{
+    width:60%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+
+}
+
+.productos-index{
+    display: flex;
+    justify-content: center;
+    overflow-x: visible;
+    margin-left: 0;
+}
+
+/*Producto destacado Index*/
+
+.destacado{
+    display: flex;
+    flex-direction: row;
+    width: 45em;
+    height: 410px;
+    margin-bottom: 40px;
+}
+
+.destacado-img-container{
+    width: 100em;
+    height: fit-content;
+}
+
+.img-destacado{
+    width: 120%;
+    margin-top: -28%;
+    margin-left: -9%;
+}
+
+/*Contacto Index*/
+.google-maps-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.google-maps{
+    width: 70%;
+    height: 500px;
+}
+
+.maps{
+    height: 500px;
+    width: 100%;
+}
+
+.texto-maps, .texto-maps h2{
+    text-align: left;
+}
+
+.texto-maps h2{
+    margin-bottom: 20px;
+}
+
+.contacto-datos-container{
+    justify-content: flex-start;
+}
+
+.linea-contacto{
+    margin:0;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+/*Seccion productos*/
+
+.filtros-mobile{
+    display: none;
+}
+
+.arriba{
+    height: 50px;
+}
+
+.productos{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left:20px;
+    margin-right: 20px;
+    height: 879px;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: 0.5fr 3.5fr 3.5fr; 
+    gap: 25px;
+    grid-template-areas: 
+    "filtros  arriba" 
+    "filtros  productos-1"
+    "filtros  productos-2"; 
+}
+
+.filtros{
+    display:contents;
+    }
+
+.filtros h3{
+    margin-left: 30px;
+    align-self: center;
+}
+
+.filtro-marcas{
+    margin-left: 30px;
+}
+
+.categorias{
+    margin-top: -20px;
+}
+
+
+/*Seccion imprenta*/
+/*Portada*/ 
+.titulo-portada-imprenta{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    padding-right:0px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.servicios-imprenta{
+    display: flex;
+    justify-content: center;
+}
+
+.card-servicios{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Pasos de trabajo imprenta*/
+.título-pasos-trabajo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pasos-de-trabajo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-right: 0;
+    margin-left: 0;
+}
+
+.paso-trabajo{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+/*Formulario imprenta*/
+.form-1 {
+    flex-direction: row;
+}
+
+.nombre{
+    margin-right:11px;
+}
+.input-1 {
+    width: 290px;
+}
+
+.input-2 {
+    width: 591px;
+}
+
+.input-mensaje{
+    width: 591px;
+    height: 80px;
+}
+
+/*Seccion Nosotros*/
+/*Acerca de Estella*/
+.portada-nosotros{
+    width: 50%;
+}
+.acerca-estella{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-acerca{
+    order: -1;
+}
+
+/*Los comienzos*/
+.comienzos-container{
+    margin:auto;
+    width: 700px;
+    height: 400px;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comienzos-container h2{
+    margin-top: 30px;
+}
+
+.comienzos-container p{
+    margin-top: 20px;
+}
+
+.img-comienzos-container{
+    width:2954px;
+    overflow:hidden;
+}
+.los-comienzos-img{
+    height: 407px;
+    width: auto;
+    margin-left: -148px;
+}
+
+.texto-comienzos{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/*Ingresando arte*/
+.ingresando-arte{
+    margin-top: 108px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ingresando-img{
+    width: 50%;
+}
+
+/*Estella hoy*/
+
+.estella-hoy{
+    margin-top: 70px;
+}
+.texto-hoy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-hoy p{
+    text-align: center;
+}
+
+.linea-nos{
+    margin-top: 4px;
+}
+
+.mision-vision{
+    display: flex;
+    width: 700px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.mision{
+    width: 326px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*Contacto*/
+.seccion-contacto{
+    margin-bottom: 0px;
+    height: 612px;
+    grid-template-areas:
+    "img-contacto-container contacto-titulo contacto-texto"
+    "img-contacto-container contacto-datos contacto-redes"
+    "img-contacto-container formulario-contacto formulario-contacto";
+    gap: 15px;
+    grid-template-columns: 3.9fr 2fr 2.5fr;
+    grid-template-rows: 1.2fr 1fr  4fr;
+}  
+
+.img-contacto-container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.img-contacto{
+    width: 155%;
+    margin-top: -10%;
+    margin-left: -25%;
+}
+
+.contacto-datos{
+    margin-top: 0px;
+}
+
+
+
+.contacto-titulo h1{
+    margin-left: 5%;
+}
+
+.contacto-texto p{
+    margin-left: 0;
+    line-height: 14px;
+}
+
+.contacto-redes {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.formulario-contacto{
+    margin-top: 14px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    margin-left: 2%;
+    border-radius: 8px;
+    padding-top: 23px;
+}
+
+.input-contacto{
+    margin-left:5%;
+    width: 85%;
+}
+
+.text-contacto{
+    margin-left:5%;
+    width: 85%;
+}
+
+.boton-form{
+    margin-left:5%;
+}
+
+.contacto-datos{
+    margin-left: 0;
+}
+}
+
+@media (min-width: 1024px){
+
+
+/*Footer*/
+footer{ 
+    height: 230px;
+    grid-template-columns: 3fr 2.5fr 2fr 2fr;
+}
+
+.links-utiles-1{
+    justify-content: flex-end;
+}
+
+.redes-footer{
+    margin-top: 40px;
+}
+
+.links-utiles-1, .links-utiles-2{
+    font-size: 13px;
+}
+
+/*Index*/
+.search-portada{
+    width: 50%;
+}
+
+.card-imprenta{
+    width: 250px;
+    height: 342px;
+}
+
+/*Nuevos productos*/
+.productos-destacados{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-nuevos-productos{
+    width: 770px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-left: 0;
+
+}
+
+/*Producto destacado Index*/
+
+.destacado{
+    width: 48.5em;
+    margin-bottom: 40px;
+}
+
+.texto-destacado{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.texto-destacado h2{
+    text-align: left;
+}
+
+/*Marcas trabajamos*/
+
+.marcas-container{
+    width: 950px;
+    overflow-x: hidden;
+}
+
+
+/*Contacto Index*/
+
+.google-maps-container{
+    height: 500px;
+    width: 48.5em;
+    margin:auto;
+}
+
+.contacto-index{
+    padding-left:168px;
+    padding-right:168px;
+}
+
+/*Seccion productos*/
+.productos{
+    margin-left:100px;
+    grid-template-columns: 20% auto;
+    justify-self: center;
+    }
+
+.ofertas-cards{
+    overflow: visible;
+}
+
+.search-bar-productos{
+    width: 602px;
+}
+
+
+/*Imprenta*/
+.portada-imprenta{
+    grid-template-areas: 
+    "titulo-portada-imprenta img-portada-imprenta"
+    ;
+    grid-template-columns: 2fr 2fr;
+}
+.card-imprenta{
+    margin-left: 15px;
+    margin-right: 18px;
+}
+
+.img-portada-imprenta{
+    width:80%;
+    margin-left:0;
+}
+
+.titulo-portada-imprenta{
+    text-align: left;
+    margin-left:25%;
+    margin-top: 80px;
+}
+
+
+.pasos-de-trabajo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Seccion Nosotros*/
+
+/*Acerca de Estella*/
+.texto-acerca{
+    margin-top: 70px;
+    margin-left: 10%;
+}
+
+/*Los comienzos*/
+.comienzos-container{
+    width: 900px;
+}
+
+.texto-comienzos h2{
+    margin-top: 50px;
+}
+
+/*Ingresando arte*/
+.ingresando-arte{
+    align-items: center;
+}
+
+
+/*Estella hoy*/
+.texto-hoy p{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.mision h3{
+    text-align: center;
+}
+
+.mision-vision{
+    width: 853px;
+}
+
+.mision{
+    padding: 35px;
+    width: 380px;
+}
+
+}

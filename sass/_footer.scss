@@ -1,0 +1,122 @@
+/*Footer*/
+
+footer{
+    background-color: #ffffff;
+    height: 530px;
+    display: grid;
+    grid-template-areas:
+    "logo-footer logo-footer"
+    "links-utiles-1  links-utiles-2"
+    "redes-footer redes-footer"
+    "copyright copyright";
+    grid-template-rows: 2.5fr  2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr;
+}
+
+.logo-img-footer{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.logo-footer{
+    grid-area: logo-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+        h3{
+            text-align: center;
+            color:#5c5b68;
+        }
+}
+
+.footer-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+        h3{
+            font-weight: 400;
+        }
+}
+
+.icon-datos-footer{
+    height: 15px;
+    margin-right: 10px;
+    filter: invert(6%) sepia(65%) saturate(5535%) hue-rotate(243deg) brightness(94%) contrast(106%);
+}
+
+.titulo-li-footer{
+    font-weight: 600;
+    color:#5c5b68;
+    margin-bottom: 10px;
+    color:#0a0a42;
+}
+
+.links-utiles-1, .links-utiles-2{
+    grid-area: links-utiles-1;
+    color:#9e9cac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    font-size: 13px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+
+        li:hover{
+            color: #22253d;
+        }
+}
+
+.links-utiles-2{
+    grid-area: links-utiles-2;
+
+        ul{
+            padding-left: 0;
+    }
+}
+
+.redes-footer{
+    grid-area: redes-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color:#F7F7F7;
+    margin-top: 20px;
+
+        h4{
+            margin-bottom: 10px;
+        }
+}
+
+.copyright{
+    grid-area: copyright;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f3f3f7;
+        
+        h4{
+            font-weight: 400;
+            text-align: center;
+            color: #7d7d8d;
+        }
+}
+
+.red-footer-icon{
+    height: 15px;
+    margin-bottom: 3px;
+}
+
+.boton-red{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    background-color: #ededf3;
+}

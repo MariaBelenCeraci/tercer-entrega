@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#0d0d55;
+    font-size: 33px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color:#0d0d55;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color:#0d0d55;
+}
+
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color:#0a0a42;
+}
+
+h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+::placeholder{
+    color:#7f7f86;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+input{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: #f4f5f7;
+}

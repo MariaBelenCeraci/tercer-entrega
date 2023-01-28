@@ -1,0 +1,414 @@
+/*Mixin*/
+
+@mixin size ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin boton ($color, $font){
+    color: $color;
+    font-family: $font;
+}
+
+/*Ejemplo de mixin en index*/
+
+.portada-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    padding-bottom: 90px;
+
+        h1{
+            margin-bottom: 26px;
+            padding-top: 130px;
+        }
+
+        p{
+            margin-bottom: 0;
+            color:#626269;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+
+.fondo{
+    background-image: url("../img/portada-index.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto;
+}
+
+.botones-portada{
+    margin-top: 40px;
+}
+
+.boton-portada, .boton-portada-2{
+    @include size (150px,45px);
+    @include boton (#ffffff, 'Josefin Sans');
+    border: none;
+    background-color: $rojo;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor:pointer;
+    transition: 0.4s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+.boton-portada-2{
+    border: solid 1px $rojo;
+    background-color: transparent;
+    color: $rojo;
+    margin-left: 10px;
+}
+
+.search-portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size (80%,3.8em);
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin-top: 5em;
+    box-shadow: 0px 4px 9px 0px rgba(43, 43, 85, 0.178);
+}
+
+.icon-search-bar{
+    height: 20px;
+}
+
+.input-search{
+    @include size (90px,100%);
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-left: 5%;
+}
+
+.boton-search{
+    @include size (47px,47px);
+    border: none;
+    background-color: #eaeaf0;
+    color:#ffffff;
+    border-radius: 50%;
+}
+
+/*Nuestros servicios Index*/
+.nuestros-servicios{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linea-texto{
+    width:56px;
+    border-bottom: solid 5px $rojo;
+    margin-top: 16px;
+    border-radius: 60px;
+}
+
+.servicios {
+    margin-top: 36px;
+}
+
+.card-servicios{
+    @include size (253px,342px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0px 30px 60px 0px rgba(97, 97, 138, 0.068);
+    border-radius: $borderradius;
+    transition: all 400ms ease;
+
+        &:hover{
+            outline: 2px solid $rojo ;
+            transform: translateY(-3%);
+        }
+
+        img{
+            height: 55px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 14px;
+            color:#64646e
+        }
+}
+
+.linea-card{
+    width:160px;
+    border-bottom: solid 2px #d2d2d8;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+.card-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:13px;
+    color: $rojo;
+    cursor: pointer;
+
+        h4{
+            margin:0;
+        }
+
+        img{
+            height: 15px;
+            margin-left: 10px;
+            margin: auto;
+        }
+}
+
+.btn-card-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background-color: #d3d3e77c;
+    border-radius: 3px;
+}
+
+/*Nuevos productos*/
+
+.productos-destacados{
+    margin-top: 85px;
+    margin-bottom: 70px;
+}
+
+.texto-nuevos-productos{
+    @include size (90%,80px);
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5%;
+    border-bottom: solid 1px #c6c6cc;
+}
+
+.productos-index{
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    margin-left: 4%;
+    margin-top: 30px;
+    overflow-x:scroll;
+}
+
+.nuevo-popular{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular{
+    margin-left: 30px;
+    color: #c2c2d4
+}
+
+.card-producto-container{
+    @include size (186px,280px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.card-producto-imagen{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height:100px;
+}
+
+.nombre-producto{
+    text-align: center;
+    font-size: 17px;
+}
+
+.precio-card{
+    text-align: center;
+    font-weight: 600;
+    color: $rojo;
+    margin-bottom: 10px;
+}
+
+.card-producto-boton{
+    @include boton (#ffffff, 'Josefin Sans');
+    outline: none;
+    background-color: $rojo;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 145px;
+}
+
+/*Producto destacado Index*/
+
+.destacado{
+    @include size (90%,660px);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    outline: $border;
+    border-radius: $borderradius;
+    margin:auto;
+    margin-bottom: 40px;
+    overflow-y:hidden;
+}
+
+.destacado-img-container{
+    @include size (100%,20em);
+    overflow: hidden;
+}
+
+.img-destacado{
+    width: 100%;
+    margin-top: -160px;
+}
+
+.texto-destacado{
+    margin-top: 40px;
+    margin-left: 60px;
+
+        h2{
+            text-align: left;
+        }
+
+        p{
+            font-size: 15px;
+            padding-right: 60px;
+            margin-top: 20px;
+            color:#7d7e88
+        }
+}
+
+.boton-destacado{
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom:40px;
+    height: 41px;
+}
+
+/*Marcas con las que trabajamos*/
+.marcas-trabajamos{
+    margin-top: 60px;;
+    margin-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+        h3{
+            color:#606072;
+        }
+}
+
+.marcas-container{
+    @include size (100%,130px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x:scroll;
+    margin: auto;
+    background-color: #ffffff;
+    outline: $border;
+    border-radius: 4px;
+    margin-top: 40px;
+
+}
+
+.marca{
+    height:40px;
+    margin-left: 30px;
+}
+
+/*Contacto Index*/
+.contacto-index{
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    margin-bottom: 40px;
+}
+
+.google-maps-container{
+    @include size (100%,100%);
+    background-color: #ffffff;
+    outline: $border;
+    border-radius: $borderradius;
+    margin: auto;
+}
+
+.maps{
+    @include size (100%,300px);
+}
+
+.texto-maps{
+    padding: 5%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon-contacto{
+    height: 20px;
+    margin-right: 10px;
+    filter: $iconorojo;
+}
+
+.contacto-datos{
+    margin-top: 40px;
+
+        h4{
+            font-weight: 300;
+        }
+}
+
+.horarios{
+    margin-top: 20px;
+}
+    
+.contacto-datos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linea-contacto{
+    margin: auto;
+    margin-top: 30px;
+}

@@ -1,0 +1,129 @@
+/*Nosotros*/
+
+
+/*Variable local*/
+$margen: 8%;
+
+
+.portada-nosotros{
+    width: 100%;
+}
+
+/*Acerca de Estella*/
+.acerca-estella{
+    margin-bottom: 40px;
+}
+
+.texto-acerca{
+    margin-top: 40px;
+    margin-left: $margen;
+    margin-right: $margen;
+}
+
+.texto-nos{
+    color:#7d7d8d;
+}
+
+.h2-nos{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.accesos-nosotros{
+    margin-top: 20px;
+}
+
+.acerca-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+        h5{
+        margin-bottom: 0;
+        margin-right: 10px;
+        color: $rojo;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.arrow-acerca{
+    filter: $iconorojo;
+}
+
+/*Los comienzos*/
+.comienzos-container{
+    background-color: #FFFFFF;
+    border: $border;
+    border-radius: 6px;
+    margin-left: $margen;
+    margin-right: $margen;
+    height: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+
+        h2{
+            margin-top: 30px;
+        }
+        
+        p{
+            margin-top: 20px;
+        }
+}
+
+
+.los-comienzos-img{
+    width: 100%;
+}
+
+.texto-comienzos{
+    margin-left: $margen;
+    margin-right: $margen;
+}
+
+/*Ingresando al mundo del arte*/
+.ingresando-img{
+    width:100%;
+    margin-bottom: 40px;
+}
+
+.texto-ingresando{
+    margin-left: $margen;
+    margin-right: $margen;
+}
+
+/*Estella hoy*/
+
+.estella-hoy{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.mision{
+    background-color: #FFFFFF;
+    border: solid 1px #bdbdc7;
+    border-radius: 4px;
+    margin-left: $margen;
+    margin-right: $margen;
+    padding: 20px;
+    margin-bottom: 20px;
+
+        h3{
+            border-bottom: 1px solid #aaaab6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: $rojo;
+            font-weight: 600;
+        }
+}
+
+.linea-nos{
+    margin-bottom: 20px;
+}
+
+.texto-hoy{
+    margin-left: $margen;
+    margin-right: $margen;
+    margin-bottom: 40px;
+}
+
